@@ -3,7 +3,7 @@
 require File.expand_path "#{File.dirname(__FILE__)}/lib/ojxv/version"
 
 Gem::Specification.new do |s|
-  s.name = "OJXV"
+  s.name = "ojxv"
   s.version = OJXV::VERSION
   s.platform = Gem::Platform::RUBY
   s.date = Time.now.strftime('%Y-%m-%d')
