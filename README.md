@@ -1,2 +1,2 @@
 # OJXV
-OpenJournals XML Validator
+Open Journals XML Validator
