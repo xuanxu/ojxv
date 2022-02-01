@@ -1,6 +1,5 @@
-require_relative "ojxv/validator"
+require_relative "ojxv/crossref_metadata_file"
 require_relative "ojxv/version"
 
 module OJXV
-  class Error < StandardError; end
 end
