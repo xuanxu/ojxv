@@ -1,10 +1,8 @@
 require 'nokogiri'
 
 module OJXV
-  class FileNotFound < StandardError; end
-  class XMLParsingError < StandardError; end
-  class UnsupportedCrossrefSchemaVersion < StandardError; end
-
+  # VALIDATING CROSSREF against the XSD
+  # Crossref bundle v0.3.1 from https://gitlab.com/crossref/schema/-/releases
   class CrossrefMetadataFile
 
     attr_accessor :errors
@@ -27,8 +25,9 @@ module OJXV
 
       @errors = xsd.validate(doc)
       @errors.empty?
+
     rescue Nokogiri::XML::SyntaxError => e
-      raise XMLParsingError, e.message
+      raise ::OJXV::XMLParsingError, e.message
     end
 
     def self.supported_schema_versions
@@ -40,7 +39,9 @@ module OJXV
       def schema(crossref_version)
         schema_path = File.join(File.dirname(__FILE__), "schemas", "crossref", "crossref#{crossref_version}.xsd")
 
-        raise ::OJXV::UnsupportedCrossrefSchemaVersion, "Unsupported Crossref schema version: #{crossref_version}" unless File.exist?(schema_path)
+        unless File.exist?(schema_path) && CrossrefMetadataFile.supported_schema_versions.include?(crossref_version)
+          raise ::OJXV::UnsupportedCrossrefSchemaVersion, "Unsupported Crossref schema version: #{crossref_version}"
+        end
 
         File.open(schema_path)
       end
