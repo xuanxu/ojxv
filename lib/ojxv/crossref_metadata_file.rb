@@ -21,7 +21,7 @@ module OJXV
       @errors = nil
 
       xsd = Nokogiri::XML::Schema(schema(crossref_version))
-      doc = Nokogiri::XML(File.read(file))
+      doc = Nokogiri::XML(file.read)
 
       @errors = xsd.validate(doc)
       @errors.empty?

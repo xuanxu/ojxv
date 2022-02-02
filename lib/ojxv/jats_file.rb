@@ -16,6 +16,7 @@ module OJXV
     end
 
     def valid_jats?(schema_version="1.3")
+      @errors = nil
       FileUtils.mkdir_p(local_path)
 
       FileUtils.cp_r schema_files_path(schema_version), local_path
@@ -29,8 +30,8 @@ module OJXV
 
       raise(NoDTD, "File has no DTD declaration") if doc.external_subset.nil?
 
-      errors = doc.external_subset.validate(doc)
-      errors.empty?
+      @errors = doc.external_subset.validate(doc)
+      @errors.empty?
 
     rescue Nokogiri::XML::SyntaxError => e
       raise ::OJXV::XMLParsingError, e.message

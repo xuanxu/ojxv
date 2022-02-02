@@ -1,0 +1,11 @@
+<xml>
+  <wrong xmlns="http://www.crossref.org/schema/5.3.1"
+         xmlns:ai="http://www.crossref.org/AccessIndicators.xsd"
+         xmlns:rel="http://www.crossref.org/relations.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         version="5.3.1"
+         xsi:schemaLocation="http://www.crossref.org/schema/5.3.1 http://www.crossref.org/schemas/crossref5.3.1.xsd">
+  <article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+  <open ref=">
+    <closed></closed>
+</
