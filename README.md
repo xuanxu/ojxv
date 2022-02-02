@@ -2,6 +2,9 @@
 
 OJXV validates Open Journals' publishing pipeline XML outputs (JATS and Crossref).
 
+[![CI](https://github.com/xuanxu/ojxv/actions/workflows/ci.yml/badge.svg)](https://github.com/xuanxu/ojxv/actions/workflows/ci.yml)
+[![Gem Version](https://badge.fury.io/rb/ojxv.svg)](https://badge.fury.io/rb/ojxv)
+
 ## Installation
 
 ```
