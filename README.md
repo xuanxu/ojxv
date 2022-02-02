@@ -32,6 +32,8 @@ OJXV can be used to validate JATS and Crossref XML files against the following s
 
 ### Validating JATS files
 
+Use the `OJXV::JatsFile` class:
+
 ```ruby
 require "ojxv"
 
@@ -50,6 +52,8 @@ jats_file.errors #=> [] / ["Error: missing element article", "Error: invalid nam
 ```
 
 ### Validating Crossref XML files
+
+Use the `OJXV::CrossrefMetadataFile` class:
 
 ```ruby
 require "ojxv"
