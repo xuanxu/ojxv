@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'securerandom'
+require 'fileutils'
 
 module OJXV
   # VALIDATING JATS against DTD
