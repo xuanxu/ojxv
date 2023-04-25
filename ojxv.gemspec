@@ -23,8 +23,8 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rdoc_options = ['--main', 'README.md', '--charset=UTF-8']
 
-  s.add_dependency "nokogiri", "~> 1.13.6"
+  s.add_dependency "nokogiri", "~> 1.14.3"
 
   s.add_development_dependency "rake", "~> 13.0.6"
-  s.add_development_dependency "minitest", "~> 5.15.0"
+  s.add_development_dependency "minitest", "~> 5.18.0"
 end
