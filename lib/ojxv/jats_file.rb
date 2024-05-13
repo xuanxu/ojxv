@@ -41,7 +41,7 @@ module OJXV
     end
 
     def self.supported_schema_versions
-      ["1.1", "1.1d1", "1.1d2", "1.1d3", "1.2", "1.2d1", "1.2d2", "1.3d1", "1.3"]
+      ["1.1", "1.1d1", "1.1d2", "1.1d3", "1.2", "1.2d1", "1.2d2", "1.3d1", "1.3d2", "1.3"]
     end
 
     private

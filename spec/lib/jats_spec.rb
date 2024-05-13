@@ -14,7 +14,7 @@ describe OJXV::JatsFile do
 
   it "should define supported schema versions" do
     supported_versions = OJXV::JatsFile.supported_schema_versions
-    _(supported_versions).must_equal ["1.1", "1.1d1", "1.1d2", "1.1d3", "1.2", "1.2d1", "1.2d2", "1.3d1", "1.3"]
+    _(supported_versions).must_equal ["1.1", "1.1d1", "1.1d2", "1.1d3", "1.2", "1.2d1", "1.2d2", "1.3d1", "1.3d2", "1.3"]
   end
 
   describe "valid_jats?" do
