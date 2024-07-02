@@ -15,7 +15,7 @@ gem install ojxv
 
 OJXV can be used to validate JATS and Crossref XML files against the following schema versions:
 
-- JATS:
+- [JATS](https://jats.nlm.nih.gov/):
   - 1.1
   - 1.1d1
   - 1.1d2
