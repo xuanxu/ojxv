@@ -26,7 +26,7 @@ OJXV can be used to validate JATS and Crossref XML files against the following s
   - 1.3d1
   - 1.3d2
   - 1.3
-- Crossref XML:
+- [Crossref XML](https://www.crossref.org/documentation/schema-library/schema-versions/):
   - 4.8.0
   - 4.8.1
   - 5.1.0
